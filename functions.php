@@ -19,3 +19,8 @@ function model(string $nom): string {
 function titre(object $article): string {
     return ucfirst($article->titre);
 }
+
+function erreur(int $code = 500) {
+    echo 'Erreur ' . $code;
+    die;
+}

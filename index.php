@@ -20,4 +20,7 @@ switch ($route) {
     case 'liste-articles':
         require_once controller('liste-articles-controller');
         break;
+    case 'details':
+        require_once controller('details-article-controller');
+        break;
 }
