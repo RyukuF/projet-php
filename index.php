@@ -23,4 +23,7 @@ switch ($route) {
     case 'details':
         require_once controller('details-article-controller');
         break;
+    case 'ajout-article':
+        require_once controller('ajout-article-controller');
+        break;
 }

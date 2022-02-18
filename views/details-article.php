@@ -5,7 +5,7 @@
 
 <dl>
     <dd>
-        <h5 class="card-text"><?= $article->contenu ?>
+        <p class="card-text"><?= $article->contenu ?>
     </dd>
     <dd>
         <img src="<?= $article->image ?>" alt="Image de l'article">

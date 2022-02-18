@@ -24,3 +24,8 @@ function erreur(int $code = 500) {
     echo 'Erreur ' . $code;
     die;
 }
+
+function redirection(string $route) {
+    header('Location: ' . url($route));
+    die;
+}
