@@ -11,3 +11,11 @@ function url(string $route = 'accueil'): string {
 function view(string $nom): string {
     return __DIR__ . '/views/' . $nom . '.php';
 }
+
+function model(string $nom): string {
+    return __DIR__ . '/models/' . $nom . '.php';
+}
+
+function titre(object $article): string {
+    return ucfirst($article->titre);
+}
