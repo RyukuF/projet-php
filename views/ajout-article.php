@@ -43,7 +43,7 @@
     </div>
 
     <div class="form-group row">
-        <label for="date" class="col-12 col-form-label">Date de publication (Année-Mois-Jour Heure:Minutes:Secondes):</label>
+        <label for="date" class="col-12 col-form-label">Date de publication :</label>
         <div class="col-12">
             <input type="date" class="form-control" name="date" id="date" value="1970-01-01T00:00:00" required></textarea>
         </div>

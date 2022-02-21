@@ -1,4 +1,5 @@
 <?php require_once view('header'); ?>
+<?php require_once 'nav.php'; ?>
 
 <h1>Modifier un article</h1>
 
