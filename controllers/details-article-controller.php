@@ -1,8 +1,8 @@
 <?php
-
 erreurEmptyId();
 
-getArticleId();
+require_once model('Article');
+$article = Article::retrieveByPK($_GET['id']);
 
 if (empty($article)) erreur(404);
 

@@ -38,8 +38,3 @@ function validateDate($date, $format = 'Y-m-d'){
 function erreurEmptyId(){
     if (empty($_GET['id'])) erreur(404);
 }
-
-function getArticleId(){
-    require_once model('Article');
-    $article = Article::retrieveByPK($_GET['id']);
-}
