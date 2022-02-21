@@ -13,6 +13,7 @@
                 <p class="card-text"><?= $a->date_de_publication ?></p>
                 <a href="<?= url('details') ?>&id=<?= $a->id ?>" class="btn btn-info">Lire</a>
                 <a href="<?= url('modif') ?>&id=<?= $a->id ?>" class="btn btn-warning text-light">Modifier</a>
+                <a href="<?= url('suppr') ?>&id=<?= $a->id ?>" class="btn btn-danger" onclick="return confirm('Voulez-vous supprimer l\'article ?')">Supprimer</a>
             </div>
         </div>
 
