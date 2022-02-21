@@ -12,6 +12,7 @@
                 <h4 class="card-title"><?= titre($a) ?></h4>
                 <p class="card-text"><?= $a->date_de_publication ?></p>
                 <a href="<?= url('details') ?>&id=<?= $a->id ?>" class="btn btn-info">Lire</a>
+                <a href="<?= url('modif') ?>&id=<?= $a->id ?>" class="btn btn-warning text-light">Modifier</a>
             </div>
         </div>
 

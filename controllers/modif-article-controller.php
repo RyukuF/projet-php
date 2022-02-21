@@ -1,5 +1,12 @@
 <?php
 
+if (empty($_GET['id'])) erreur(404);
+
+require_once model('Article');
+$article = Article::retrieveByPK($_GET['id']);
+
+if (empty($article)) erreur(404);
+
 if (!empty($_POST)) {
 
     if (
@@ -12,10 +19,7 @@ if (!empty($_POST)) {
 
         && !empty($_POST['date'])
         && validateDate($_POST['date'])
-
     ) {
-        require_once model('Article');
-        $article = new Article;
 
         $article->auteur = $_POST['auteur'];
         $article->image = $_POST['image'];
@@ -29,4 +33,4 @@ if (!empty($_POST)) {
     } else $error = true;
 }
 
-require_once view('ajout-article');
+require_once view('modif-article');
