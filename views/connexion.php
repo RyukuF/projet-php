@@ -30,6 +30,7 @@
     <div class="form-group row">
         <div class="offset-sm-2 col-sm-10">
             <button type="submit" class="btn btn-primary">Connexion</button>
+            <span><a href="index.php?route=creation-compte">Inscription</a></span>
         </div>
     </div>
 </form>

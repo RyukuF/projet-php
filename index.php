@@ -45,4 +45,7 @@ switch ($route) {
     case 'deconnexion':
         require_once controller('deconnexion-controller');
         break;
+    case 'creation-compte':
+        require_once controller('creation-compte-controller');
+        break;
 }
