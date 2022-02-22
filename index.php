@@ -42,4 +42,7 @@ switch ($route) {
         require_once controller('connexion-controller');
         connexion_handler();
         break;
+    case 'deconnexion':
+        require_once controller('deconnexion-controller');
+        break;
 }

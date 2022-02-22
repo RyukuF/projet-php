@@ -27,4 +27,3 @@ function connexion_handler(){
         } else die('Formulaire mal rempli');
     }
 }
-    
