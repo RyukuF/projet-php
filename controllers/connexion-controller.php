@@ -19,6 +19,7 @@ function connexion_handler(){
                     $_SESSION['pseudo'] = $utilisateur->pseudo;
                     $_SESSION['identifiant'] = $utilisateur->identifiant;
                     $_SESSION['id'] = $utilisateur->id;
+                    $_SESSION['avatar'] = $utilisateur->avatar;
 
                     redirection('accueil');
 
