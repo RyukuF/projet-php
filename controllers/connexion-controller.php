@@ -26,4 +26,8 @@ function connexion_handler(){
             } else die('Mauvais identifiant');
         } else die('Formulaire mal rempli');
     }
+
+    if(isset($_POST['rester-co'])){
+        setcookie("rester-co", $_POST['id'], time()+2628000);
+    }
 }

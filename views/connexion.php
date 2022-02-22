@@ -28,7 +28,14 @@
     </div>
 
     <div class="form-group row">
-        <div class="offset-sm-2 col-sm-10">
+        <div class="col-sm-12">
+            <input type="checkbox" name="rester-co" id="rester-co">
+            <span><label for="rester-co" class="col-form-label">Rester connecté</label></span>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-sm-10">
             <button type="submit" class="btn btn-primary">Connexion</button>
             <span><a href="index.php?route=creation-compte">Inscription</a></span>
         </div>
